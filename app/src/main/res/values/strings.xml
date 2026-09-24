@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">AppAposentadoria</string>
+    <string name="digite_sua_idade">Digite sua idade</string>
+    <string name="requerido">Requerido</string>
+    <string name="calcular">Calcular</string>
 </resources>

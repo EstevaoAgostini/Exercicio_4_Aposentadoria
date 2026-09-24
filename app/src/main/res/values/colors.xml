@@ -7,4 +7,7 @@
     <color name="degrade1">#92BCB8</color>
     <color name="degrade2">#F8BE7F</color>
     <color name="degrade3">#FBE379</color>
+
+    <!--Cor do helper-->
+    <color name="red">#FF0000</color>
 </resources>
