@@ -35,7 +35,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editIdade"
-            android:fontFamily="@font/dearplatecalifornia"
+            android:fontFamily="@font/coolvetica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="@string/calcular"
-        android:fontFamily="@font/dearplatecalifornia"
+        android:fontFamily="@font/coolvetica"
         app:icon="@drawable/iccalculadora"
         android:textSize="20sp"/>
 
@@ -59,7 +59,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/dearplatecalifornia"
+        android:fontFamily="@font/coolvetica"
+        android:textSize="20sp"
         android:text="@string/resultado" />
 
     <TextView
@@ -68,7 +69,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/dearplatecalifornia"
+        android:fontFamily="@font/coolvetica"
+        android:textSize="20sp"
         android:text="@string/nome" />
 
 </LinearLayout>

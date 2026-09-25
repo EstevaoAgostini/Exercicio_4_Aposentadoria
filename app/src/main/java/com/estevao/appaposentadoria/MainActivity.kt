@@ -36,9 +36,11 @@ class MainActivity : AppCompatActivity() {
     private fun calcular() {
         val idade = binding.editIdade.text.toString().toIntOrNull()
         val genero = binding.escolha.selectedItem.toString()
+        binding.inputIdade.helperText = "Requerido"
+        binding.resultado.text = "Resultado"
 
-        if (idade == null) {
-            binding.inputIdade.helperText = "Digite a sua idade de forma válida!"
+        if (idade == null || idade > 130) {
+            binding.inputIdade.helperText = "Digite uma idade válida!"
             return
         }
 
@@ -47,14 +49,14 @@ class MainActivity : AppCompatActivity() {
             if (tempoRestante <= 0) {
                 binding.resultado.text = "Você já deveria estar aposentado."
             } else {
-                binding.resultado.text = "Faltam ${tempoRestante} anos para se aposentar"
+                binding.resultado.text = "Faltam ${tempoRestante} anos para você se aposentar"
             }
         } else {
             val tempoRestante = 62 - idade
             if (tempoRestante <= 0) {
                 binding.resultado.text = "Você já deveria estar aposentada."
             } else {
-                binding.resultado.text = "Faltam ${tempoRestante} anos para se aposentar"
+                binding.resultado.text = "Faltam ${tempoRestante} anos para você se aposentar"
             }
         }
     }
