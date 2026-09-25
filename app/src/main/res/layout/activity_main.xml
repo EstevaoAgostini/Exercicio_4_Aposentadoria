@@ -48,6 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="@string/calcular"
+        android:fontFamily="@font/dearplatecalifornia"
         app:icon="@drawable/iccalculadora"/>
 
     <TextView
