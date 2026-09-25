@@ -3,4 +3,6 @@
     <string name="digite_sua_idade">Digite sua idade</string>
     <string name="requerido">Requerido</string>
     <string name="calcular">Calcular</string>
+    <string name="resultado">Resultado</string>
+    <string name="nome">Estevão Nunes Agostini</string>
 </resources>
