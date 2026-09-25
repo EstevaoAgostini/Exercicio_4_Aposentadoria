@@ -26,5 +26,36 @@ class MainActivity : AppCompatActivity() {
 
         //Associa o adapter no spinner
         binding.escolha.adapter = adapter
+
+        binding.calcular.setOnClickListener {
+            calcular()
+        }
+
+    }
+
+    private fun calcular() {
+        val idade = binding.editIdade.text.toString().toIntOrNull()
+        val genero = binding.escolha.selectedItem.toString()
+
+        if (idade == null) {
+            binding.inputIdade.helperText = "Digite a sua idade de forma válida!"
+            return
+        }
+
+        if (genero == "Masculino") {
+            val tempoRestante = 65 - idade
+            if (tempoRestante <= 0) {
+                binding.resultado.text = "Você já deveria estar aposentado."
+            } else {
+                binding.resultado.text = "Faltam ${tempoRestante} anos para se aposentar"
+            }
+        } else {
+            val tempoRestante = 62 - idade
+            if (tempoRestante <= 0) {
+                binding.resultado.text = "Você já deveria estar aposentada."
+            } else {
+                binding.resultado.text = "Faltam ${tempoRestante} anos para se aposentar"
+            }
+        }
     }
 }
